@@ -14,8 +14,5 @@ def run():
         print('both of you have the same age')
     else:
         print('wrong way')            
-
-
 if __name__ == '__main__':
     run()    
-   
