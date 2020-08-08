@@ -12,3 +12,5 @@ while abs(answer**2 - objective) >= epsilon:
         high = answer
     answer = (high + low) / 2
 print(f'Square root of {objective} is {answer}')
+
+#implementacion iteractiva
