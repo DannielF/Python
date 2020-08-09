@@ -25,4 +25,4 @@ if __name__ == "__main__":
     print(list)
     print(f'The element {objective} {"is" if find else "no this"} in the list. ')
     print(f'Iter binary_source: {iter_bin}') #Cuantas iteraciones tomo hallar el resultado.
-    #implementacion recursiva
+    
