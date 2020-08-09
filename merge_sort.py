@@ -1,7 +1,7 @@
 # Ordenamiento por mezcla
 import random
 
-def merge_sort(list):
+def merge_sort(list): # O(n log n) log lineal
     if len(list) > 1:
         middle = len(list) // 2
         left = list[:middle]
