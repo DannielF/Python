@@ -1,7 +1,7 @@
 # Python
 
-### My first steps
+### The Python ways
 
-> My project is working....
+> Welcome Python's world....
 
 [![](https://i.imgur.com/vi6bEl1.jpeg)](http://https://i.imgur.com/vi6bEl1.jpeg)
