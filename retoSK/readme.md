@@ -19,7 +19,7 @@
 Hi, you need to follow this steps to play the game, so here we go.
 
 - You must write the answers exactly what you can see on the screen
-- If your answer is wrong the program will end
+- If your life comes to 0, the game will end
 - The data will save in a file
 
 #### Requirements

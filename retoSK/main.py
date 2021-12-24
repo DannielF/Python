@@ -1,4 +1,5 @@
 import random
+
 from category import Category
 
 """ 
@@ -107,17 +108,20 @@ def create_categories():
 Game loop  
 
 @param prize = prize for the player
+@param life = life of the player
 
 """
 
 
 prize = 0
+life = 5
 
 
 def game_loop_category_1():
     print("Welcome to the game!")
     print("First Category:")
     global prize
+    global life
     random_option = random.randint(1, 5)
     while(True):
         if(1 == random_option):
@@ -130,6 +134,8 @@ def game_loop_category_1():
                 return False
             else:
                 print("Wrong!")
+                print(life)
+                life -= 1
 
         elif(2 == random_option):
             print(question_2.question)
@@ -141,6 +147,7 @@ def game_loop_category_1():
                 return False
             else:
                 print("Wrong!")
+                life -= 1
 
         elif(3 == random_option):
             print(question_3.question)
@@ -152,6 +159,7 @@ def game_loop_category_1():
                 return False
             else:
                 print("Wrong!")
+                life -= 1
 
         elif(4 == random_option):
             print(question_4.question)
@@ -163,6 +171,7 @@ def game_loop_category_1():
                 return False
             else:
                 print("Wrong!")
+                life -= 1
 
         elif(5 == random_option):
             print(question_5.question)
@@ -174,14 +183,21 @@ def game_loop_category_1():
                 return False
             else:
                 print("Wrong!")
+                life -= 1
+
+        if(life <= 0):
+            print("You lost!")
+            quit()
 
 
 def game_loop_category_2():
     print("Second Category:")
     global prize
+    global life
     random_option = random.randint(6, 10)
 
     while(True):
+
         if(6 == random_option):
             print(question_6.question)
             print(question_6.options)
@@ -237,10 +253,15 @@ def game_loop_category_2():
             else:
                 print("Wrong!")
 
+        if(life <= 0):
+            print("You lost!")
+            quit()
+
 
 def game_loop_category_3():
     print("Third Category:")
     global prize
+    global life
     random_option = random.randint(11, 15)
 
     while(True):
@@ -299,10 +320,15 @@ def game_loop_category_3():
             else:
                 print("Wrong!")
 
+        if(life <= 0):
+            print("You lost!")
+            quit()
+
 
 def game_loop_category_4():
     print("Fourth Category:")
     global prize
+    global life
     random_option = random.randint(16, 20)
 
     while(True):
@@ -361,10 +387,15 @@ def game_loop_category_4():
             else:
                 print("Wrong!")
 
+        if(life <= 0):
+            print("You lost!")
+            quit()
+
 
 def game_loop_category_5():
     print("Fifth Category:")
     global prize
+    global life
     random_option = random.randint(21, 25)
 
     while(True):
@@ -423,6 +454,10 @@ def game_loop_category_5():
             else:
                 print("Wrong!")
 
+        if(life <= 0):
+            print("You lost!")
+            quit()
+
 
 def print_points():
     print("")
@@ -459,4 +494,4 @@ if __name__ == "__main__":
     game_loop_category_4()
     print_points()
     game_loop_category_5()
-    save_data()
+    "save_data()"
