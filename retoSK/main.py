@@ -1,4 +1,5 @@
 import random
+import sys
 
 from category import Category
 
@@ -186,8 +187,7 @@ def game_loop_category_1():
                 life -= 1
 
         if(life <= 0):
-            print("You lost!")
-            quit()
+            sys.exit("You lost")
 
 
 def game_loop_category_2():
@@ -254,8 +254,7 @@ def game_loop_category_2():
                 print("Wrong!")
 
         if(life <= 0):
-            print("You lost!")
-            quit()
+            sys.exit("You lost")
 
 
 def game_loop_category_3():
@@ -321,8 +320,7 @@ def game_loop_category_3():
                 print("Wrong!")
 
         if(life <= 0):
-            print("You lost!")
-            quit()
+            sys.exit("You lost")
 
 
 def game_loop_category_4():
@@ -388,8 +386,7 @@ def game_loop_category_4():
                 print("Wrong!")
 
         if(life <= 0):
-            print("You lost!")
-            quit()
+            sys.exit("You lost")
 
 
 def game_loop_category_5():
@@ -455,8 +452,7 @@ def game_loop_category_5():
                 print("Wrong!")
 
         if(life <= 0):
-            print("You lost!")
-            quit()
+            sys.exit("You lost")
 
 
 def print_points():
