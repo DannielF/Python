@@ -490,4 +490,4 @@ if __name__ == "__main__":
     game_loop_category_4()
     print_points()
     game_loop_category_5()
-    "save_data()"
+    save_data()
